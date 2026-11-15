@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cairo', Tahoma, Arial, sans-serif;
+    background: #f6f7fb;
+    color: #101828;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 92%;
+    max-width: 1160px;
+    margin: auto;
+}
+
+/* الشريط العلوي */
+
+.topbar {
+    background: #11152a;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* رأس الموقع */
+
+header {
+    background: #fff;
+    box-shadow: 0 4px 20px #00000010;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #11152a;
+}
+
+.logo-mark {
+    width: 43px;
+    height: 43px;
+    border-radius: 14px;
+    background: #5b4bdb;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.logo small {
+    display: block;
+    font-size: 10px;
+    color: #667085;
+}
+
+/* قائمة التنقل */
+
+nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #475467;
+}
+
+nav a:hover,
+nav a.active {
+    color: #5b4bdb;
+}
+
+.nav-cta {
+    background: #5b4bdb;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+}
+
+/* عنوان الصفحة */
+
+.page-hero {
+    background: linear-gradient(120deg,#f0efff,#fafaff);
+    padding: 48px 0;
+}
+
+.page-hero h1 {
+    font-size: 38px;
+    margin: 5px 0;
+    font-weight: 900;
+}
+
+.page-hero p {
+    color: #667085;
+}
+
+.crumb {
+    color: #667085;
+    font-size: 13px;
+}
+
+/* قسم المنتجات */
+
+.section {
+    padding: 55px 0;
+}
+
+.section-head {
+    margin-bottom: 25px;
+}
+
+.section-head h2 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.section-head p {
+    color: #667085;
+    margin: 5px 0;
+}
+
+/* شبكة المنتجات */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #e8eaf2;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px #00000012;
+}
+
+.product img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.product-body {
+    padding: 17px;
+}
+
+.tag {
+    background: #efedff;
+    color: #5b4bdb;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.product h3 {
+    font-size: 17px;
+    margin: 12px 0 5px;
+}
+
+.product p {
+    color: #667085;
+    font-size: 13px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #5b4bdb;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.add {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: #efedff;
+    color: #5b4bdb;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+}
+
+/* مميزات الأجهزة */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 17px;
+    text-align: center;
+    border: 1px solid #e8eaf2;
+}
+
+.feature span {
+    font-size: 27px;
+}
+
+.feature h3 {
+    font-size: 16px;
+}
+
+.feature p {
+    font-size: 12px;
+    color: #667085;
+}
+
+.features-section {
+    padding-top: 0;
+}
+
+/* تذييل الموقع */
+
+footer {
+    background: #11152a;
+    color: white;
+    padding: 40px 0 15px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-grid p,
+.footer-grid a {
+    color: #b9bdd4;
+    font-size: 13px;
+}
+
+.footer-grid a {
+    display: block;
+    margin: 8px 0;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #343750;
+    margin-top: 25px;
+    padding-top: 15px;
+    color: #b9bdd4;
+    font-size: 12px;
+}
+
+/* الشاشات المتوسطة */
+
+@media(max-width:900px) {
+
+    .products {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+}
+
+/* شاشات الجوال */
+
+@media(max-width:600px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .products {
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    .product img {
+        height: 145px;
+    }
+
+    .product-body {
+        padding: 10px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero h1 {
+        font-size: 29px;
+    }
+}
